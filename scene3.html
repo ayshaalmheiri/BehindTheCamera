@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+   <link rel="stylesheet" href="film.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+       <!-- Title of the page -->
+   <title>Scene 3</title>
+   <link rel="icon"  href="img/CameraIcon.png"> <!-- ICON-->
+ </head>
+  <body>    
+    <div id="video-container">
+      <center>
+        <video id="video-player" controls>
+          <source src="img/Vid2.mp4" type="video/mp4">
+        </video>
+      </center>
+      <div id="menu">
+        <ul>
+          <!--Options-->   
+          <center>
+            <li><a href="scene4.html">Pull Out a Gun</a></li>
+            <li><a href="scene5.html">Pull Out a Stick</a></li>
+          </center>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const videoPlayer = document.querySelector('#video-player');
+      const menu = document.querySelector('#menu');
+      var sound = document.getElementById('sound');
+      videoPlayer.addEventListener('ended', function() {
+        menu.style.display = 'flex';
+        const audio = new Audio('sound/sound.mp3');
+        audio.setAttribute('loop', '');
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
