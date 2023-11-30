@@ -43,14 +43,12 @@ body{
 }
 
  .nav-bar .crew-icon{
-  /* position: absolute;  */
  cursor: pointer;
  padding-left:150%;
   margin-top:25px;
 }
  
 .nav-bar .info-icon{
-  /* position: absolute;  */
  cursor: pointer;
  margin-right:80px;
  padding-left:20%;
@@ -61,19 +59,12 @@ body{
 
 /* icon styling */
 .nav-bar .crew-icon .home-icon .bts-icon .info-icon{
-  /* position: absolute;  */
  font-size: 2.5vw;
  color: white;
  cursor: pointer;
  padding-right:5%;
  padding-left:5%;
  padding-top: 2%;
-}
-
-/* special styling when icon is hovererd over */
-.nav-bar .crew-icon .home-icon .bts-icon .info-icon:hover{
- color: white;
- font-size: 4vw;
 }
 
 nav {
