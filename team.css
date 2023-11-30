@@ -1,0 +1,165 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #435585;
+}
+
+@media (max-width: 768px) {
+  /* Center align content */
+  .team {
+    text-align: center;
+    margin-right: -450px;
+  }
+
+ h1{
+   font-size:35px;
+  }
+
+  .team .sub-text {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size:18px;
+  }
+
+ /* icon styling */
+.nav-bar .home-icon{
+ cursor: pointer;
+ margin-left:195px;
+ padding-left:98%;
+  margin-top:25px;
+}
+
+.nav-bar .bts-icon{
+ padding-left:268%;
+   margin-top:25px;
+}
+
+ .nav-bar .crew-icon{
+  /* position: absolute;  */
+ cursor: pointer;
+ padding-left:150%;
+  margin-top:25px;
+}
+ 
+.nav-bar .info-icon{
+  /* position: absolute;  */
+ cursor: pointer;
+ margin-right:80px;
+ padding-left:20%;
+ margin-top:25px;
+}
+}
+
+
+/* icon styling */
+.nav-bar .crew-icon .home-icon .bts-icon .info-icon{
+  /* position: absolute;  */
+ font-size: 2.5vw;
+ color: white;
+ cursor: pointer;
+ padding-right:5%;
+ padding-left:5%;
+ padding-top: 2%;
+}
+
+/* special styling when icon is hovererd over */
+.nav-bar .crew-icon .home-icon .bts-icon .info-icon:hover{
+ color: white;
+ font-size: 4vw;
+}
+
+nav {
+  position: absolute;
+  top: 0; 
+  width: 100%; 
+  z-index: 999; 
+}
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center; 
+    text-align: center; 
+    margin-left: 10px;
+  }
+  
+  nav li {
+    padding-top: 26px;
+    margin: 10px 130px;
+  }
+
+  nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    cursor: pointer;
+  }
+
+  .nav-items li:active a{
+  opacity: 0.8;
+  }
+
+.team{
+  margin-top: 220px;
+  text-align: center;
+}
+
+.team .meet {
+  color:#f5e8c7;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 50px;
+}
+
+.team .sub-text{
+font-weight:lighter;
+font-size: 17px;
+color:#f5e8c7;
+font-family: sans-serif;
+padding-bottom: 12px;
+}
+
+.team .member{
+  display: inline-block;
+  margin: 40px;
+  width: 400px;
+  height: 520px;
+  background-color: #fff;
+  color: #7e7b7b;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.team .member img{
+  margin: 20px;
+  height: 250px;
+  width: 200px;
+}
+
+.member h3{
+  color: #646363;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.member p{
+  letter-spacing: 2px;
+}
+
