@@ -1,0 +1,206 @@
+* {
+  background-color:#435585;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Targets Items in Nav Bar*/
+.nav-bar .crew-icon,
+.nav-bar .home-icon,
+.nav-bar .bts-icon,
+.nav-bar .info-icon {
+  font-size: 1.25vw;
+  color: white;
+  cursor: pointer;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+
+/*Targets Navigation Bar as a Whole*/
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+}
+
+nav li {
+  padding-top: 26px;
+  margin: 10px 130px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+/*Targets Navigation Items When Hovered Over*/
+nav a:hover {
+  cursor: pointer;
+  height: 3em;
+}
+
+/*Targets Navigation Items When Clicked On*/
+.nav-items li:active a {
+  opacity: 0.8;
+}
+
+#first-page {
+  position: relative;
+  margin-top: 270px;
+}
+
+/*Targets Background Images*/
+.leftcornerdown,
+.rightcornerdown {
+  width: 600px;
+  height: 500px;
+  position: fixed;
+  margin-top: 90px;
+  animation: shake 4s infinite;
+}
+
+/*Specifically Targets Left Corner Background Image*/
+.leftcornerdown {
+  right: 50%;
+  margin-right: 200px; /* half of the image width */
+}
+
+/*Specifically Targets Right Corner Background Image*/
+.rightcornerdown {
+  left: 50%;
+  margin-left: 200px; /* half of the image width */
+  margin-top: 90px;
+}
+
+/* Shake Left-Right Animation */
+@keyframes shakeLeftRight {
+  0%{
+    transform: translateX(0); /* Initial position */
+  }
+  25% {
+    transform: translateX(-5px); /* Shake to the left */
+  }
+  75% {
+    transform: translateX(5px); /* Shake to the right */
+  }
+}
+
+/* Apply Shake Left-Right Animation to leftcorner elements */
+.leftcorner {
+  animation: shakeLeftRight 2.5s linear infinite;
+}
+
+/* Shake Right-Left Animation */
+@keyframes shakeRightLeft {
+  0% {
+    transform: translateX(0); /* Initial position */
+  }
+  25% {
+    transform: translateX(5px); /* Shake to the right */
+  }
+  75% {
+    transform: translateX(-5px); /* Shake to the left */
+  }
+}
+
+/* Apply Shake Right-Left Animation to rightcorner elements */
+.rightcorner {
+  animation: shakeRightLeft 2.5s linear infinite;
+}
+
+/* Apply Shake Right-Left Animation to rightcornerdown elements */
+.rightcornerdown {
+  animation: shakeRightLeft 2.5s linear infinite;
+}
+
+/* Shake Left-Right Down Animation */
+@keyframes shakeLeftRightDown {
+  0%, 100% {
+    transform: translateY(0); /* Initial and final positions */
+  }
+  25% {
+    transform: translateY(-5px); /* Shake up */
+  }
+  75% {
+    transform: translateY(5px); /* Shake down */
+  }
+}
+
+/* Apply Shake Left-Right Down Animation to leftcornerdown elements */
+.leftcornerdown {
+  animation: shakeLeftRightDown 2.5s linear infinite;
+  max-width: 100%;
+}
+
+/* Shake Right-Left Down Animation */
+@keyframes shakeRightLeftDown {
+  0%, 100% {
+    transform: translateY(0); /* Initial and final positions */
+  }
+  25% {
+    transform: translateY(5px); /* Shake down */
+  }
+  75% {
+    transform: translateY(-5px); /* Shake up */
+  }
+}
+
+/* Apply Shake Right-Left Down Animation to rightcornerdown elements */
+.rightcornerdown {
+  animation: shakeRightLeftDown 2.5s linear infinite;
+  max-width: 100%;
+}
+
+/*Targets Title*/
+.first-page .title {
+  font-size: 60px;
+  color: #ece4cf;
+}
+
+/*Targets Subtitle*/
+.first-page .subtitle {
+  margin-top:8px;
+  font-size: 15px;
+  color: #ece4cf;
+}
+
+/*Targets Film Button*/
+.first-page .film-button {
+  border-radius: 50px;
+  margin-top: 50px;
+  background-color: #ece4cf;
+  color:#aaa18d;
+  border: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+/*Specifically Targets Film Button When Hovered Over*/
+.first-page .film-button:hover {
+  background-color: #aaa18d;
+  color: #ece4cf;
+}
+
+/*Specifically Targets Film Button When Clicked On*/
+.first-page .film-button:active {
+  opacity: 0.8;
+}
